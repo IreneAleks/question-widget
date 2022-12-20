@@ -1,0 +1,117 @@
+/* NULL ================================= */
+*{padding: 0; margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited,a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+/* ============================================ */
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    color: #221f1f;
+}
+
+/* Button */
+.button {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    background-color: #fff;
+    font-size: 30px;
+    border-radius: 45px;
+    box-shadow: 0 0 10px 1px rgb(200, 200, 200);
+    padding: 15px 28px;  
+}
+
+.button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Widget */
+.widget {
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    right: -330px;
+    bottom: 15px;
+    width: 300px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 1px rgb(200, 200, 200);
+}
+
+.show {
+    right: 30px;
+    transition: all 0.3s ease;
+}
+
+.widget-header {
+    position: relative;
+    border-bottom: 1px solid #c7c7c7;
+    height: 50px;
+}
+
+.widget-body {
+    padding: 20px 30px;
+}
+
+.widget-body-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.widget-body-input-name {
+    color: #2c2929;
+    margin: 12px 0 2px;
+}
+
+
+
+.button-close {
+    position: absolute;
+    right: 15px;
+    top: 25%;
+    background-color: transparent;
+    color: #797878;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.button-close:hover {
+    color: red;
+    transition: all 0.2s linear;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.input-submit {
+    background-color: #00a046;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 15px 10px;
+    margin: 15px auto;
+}
+
+.input-submit:hover {
+    background-color: #06b652;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}

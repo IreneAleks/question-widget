@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Vidget</title>
+</head>
+<body>
+    <main class="page">
+        <button class="button" data-modal="#modal-1">?</button>
+
+        <div class="widget" id="modal-1">
+            <div class="widget-header">
+                <button class="button-close" data-close>✕</button>
+            </div>
+
+            <div class="widget-body">
+                <div class="widget-body-title">Напишіть нам листа</div>
+
+                <form action="#">
+                    <div class="widget-body-input-name">Ваше ім'я</div> 
+                    <input class="input" type="text" name="name" required> 
+                    <div class="widget-body-input-name">Ваш email</div>
+                    <input class="input" type="email" name="email" required>
+                    <div class="widget-body-input-name">Текст повідомлення</div>
+                    <textarea class="input" type="text" name="message" required></textarea>
+                    <input class="input-submit" type="submit" value="Надіслати повідомлення">
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="app.js"></script>
+
+
+</body>
+</html>
